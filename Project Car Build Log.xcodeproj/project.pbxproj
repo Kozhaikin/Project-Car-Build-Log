@@ -14,6 +14,11 @@
 		5ACF4D12262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D10262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld */; };
 		5ACF4D14262DB83000A577E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ACF4D13262DB83000A577E8 /* Assets.xcassets */; };
 		5ACF4D17262DB83000A577E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACF4D15262DB83000A577E8 /* LaunchScreen.storyboard */; };
+		5ACF4D21262DBC1400A577E8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D20262DBC1400A577E8 /* ProjectViewController.swift */; };
+		5ACF4D25262DBC9300A577E8 /* NewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D24262DBC9300A577E8 /* NewProjectViewController.swift */; };
+		5ACF4D28262DBCA300A577E8 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D27262DBCA300A577E8 /* PageViewController.swift */; };
+		5ACF4D2B262DBCBB00A577E8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D2A262DBCBB00A577E8 /* SettingsViewController.swift */; };
+		5ACF4D2E262DBCCD00A577E8 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D2D262DBCCD00A577E8 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		5ACF4D13262DB83000A577E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ACF4D16262DB83000A577E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ACF4D18262DB83000A577E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ACF4D20262DBC1400A577E8 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		5ACF4D24262DBC9300A577E8 /* NewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectViewController.swift; sourceTree = "<group>"; };
+		5ACF4D27262DBCA300A577E8 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		5ACF4D2A262DBCBB00A577E8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5ACF4D2D262DBCCD00A577E8 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,9 @@
 		5ACF4D06262DB82F00A577E8 /* Project Car Build Log */ = {
 			isa = PBXGroup;
 			children = (
+				5ACF4D23262DBC7200A577E8 /* View Controllers */,
 				5ACF4D07262DB82F00A577E8 /* AppDelegate.swift */,
 				5ACF4D09262DB82F00A577E8 /* SceneDelegate.swift */,
-				5ACF4D0B262DB82F00A577E8 /* ViewController.swift */,
 				5ACF4D0D262DB82F00A577E8 /* Main.storyboard */,
 				5ACF4D13262DB83000A577E8 /* Assets.xcassets */,
 				5ACF4D15262DB83000A577E8 /* LaunchScreen.storyboard */,
@@ -68,6 +78,19 @@
 				5ACF4D10262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld */,
 			);
 			path = "Project Car Build Log";
+			sourceTree = "<group>";
+		};
+		5ACF4D23262DBC7200A577E8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5ACF4D0B262DB82F00A577E8 /* ViewController.swift */,
+				5ACF4D20262DBC1400A577E8 /* ProjectViewController.swift */,
+				5ACF4D24262DBC9300A577E8 /* NewProjectViewController.swift */,
+				5ACF4D27262DBCA300A577E8 /* PageViewController.swift */,
+				5ACF4D2A262DBCBB00A577E8 /* SettingsViewController.swift */,
+				5ACF4D2D262DBCCD00A577E8 /* HelpViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +163,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ACF4D21262DBC1400A577E8 /* ProjectViewController.swift in Sources */,
+				5ACF4D28262DBCA300A577E8 /* PageViewController.swift in Sources */,
+				5ACF4D25262DBC9300A577E8 /* NewProjectViewController.swift in Sources */,
 				5ACF4D0C262DB82F00A577E8 /* ViewController.swift in Sources */,
+				5ACF4D2E262DBCCD00A577E8 /* HelpViewController.swift in Sources */,
 				5ACF4D08262DB82F00A577E8 /* AppDelegate.swift in Sources */,
 				5ACF4D12262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld in Sources */,
 				5ACF4D0A262DB82F00A577E8 /* SceneDelegate.swift in Sources */,
+				5ACF4D2B262DBCBB00A577E8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
