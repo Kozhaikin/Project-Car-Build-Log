@@ -23,6 +23,7 @@
 		5ACF4D3E262DC21B00A577E8 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D3D262DC21B00A577E8 /* Page3ViewController.swift */; };
 		5ACF4D41262DC22A00A577E8 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D40262DC22A00A577E8 /* Project.swift */; };
 		5ACF4D44262DC23000A577E8 /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D43262DC23000A577E8 /* Part.swift */; };
+		5ACF4D4B262F128100A577E8 /* NewProjectWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D4A262F128100A577E8 /* NewProjectWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		5ACF4D3D262DC21B00A577E8 /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 		5ACF4D40262DC22A00A577E8 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		5ACF4D43262DC23000A577E8 /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		5ACF4D4A262F128100A577E8 /* NewProjectWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProjectWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		5ACF4D06262DB82F00A577E8 /* Project Car Build Log */ = {
 			isa = PBXGroup;
 			children = (
+				5ACF4D49262F125700A577E8 /* Support */,
 				5ACF4D23262DBC7200A577E8 /* View Controllers */,
 				5ACF4D07262DB82F00A577E8 /* AppDelegate.swift */,
 				5ACF4D09262DB82F00A577E8 /* SceneDelegate.swift */,
@@ -84,8 +87,6 @@
 				5ACF4D15262DB83000A577E8 /* LaunchScreen.storyboard */,
 				5ACF4D18262DB83000A577E8 /* Info.plist */,
 				5ACF4D10262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld */,
-				5ACF4D40262DC22A00A577E8 /* Project.swift */,
-				5ACF4D43262DC23000A577E8 /* Part.swift */,
 			);
 			path = "Project Car Build Log";
 			sourceTree = "<group>";
@@ -103,6 +104,16 @@
 				5ACF4D3D262DC21B00A577E8 /* Page3ViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5ACF4D49262F125700A577E8 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5ACF4D4A262F128100A577E8 /* NewProjectWindow.swift */,
+				5ACF4D40262DC22A00A577E8 /* Project.swift */,
+				5ACF4D43262DC23000A577E8 /* Part.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			files = (
 				5ACF4D3B262DC20D00A577E8 /* Page2ViewController.swift in Sources */,
 				5ACF4D21262DBC1400A577E8 /* ProjectViewController.swift in Sources */,
+				5ACF4D4B262F128100A577E8 /* NewProjectWindow.swift in Sources */,
 				5ACF4D25262DBC9300A577E8 /* NewProjectViewController.swift in Sources */,
 				5ACF4D3E262DC21B00A577E8 /* Page3ViewController.swift in Sources */,
 				5ACF4D44262DC23000A577E8 /* Part.swift in Sources */,

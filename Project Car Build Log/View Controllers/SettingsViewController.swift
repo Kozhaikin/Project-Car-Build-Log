@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import UIKit
+
+class SettingsViewController: UITableViewController {
+    
+    override func viewDidLoad() {
+        
+    }
+    
+    
+}

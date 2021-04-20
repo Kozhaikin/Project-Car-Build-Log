@@ -12,7 +12,7 @@
         <!--Page 1-->
         <scene sceneID="zu6-4w-RSS">
             <objects>
-                <viewController storyboardIdentifier="Page 1" title="Page 1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DgE-34-vHv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page 1" title="Page 1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DgE-34-vHv" customClass="Page1ViewController" customModule="Project_Car_Build_Log" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LcP-Wz-gda">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -23,10 +23,44 @@
                                 <color key="pageIndicatorTintColor" systemColor="labelColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEx-0Q-Z78">
+                                <rect key="frame" x="155" y="432" width="107" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="New Project"/>
+                                <connections>
+                                    <action selector="openNewProject:" destination="DgE-34-vHv" eventType="touchUpInside" id="emQ-nJ-wT8"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1w5-ln-nNS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Project 1" id="UgY-kl-gYt">
+                                        <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="btb-68-hs2">
+                                            <connections>
+                                                <segue destination="fk8-iT-eSg" kind="show" id="rbZ-iT-9eE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="MW9-Kv-Uc8">
+                                            <connections>
+                                                <segue destination="Bu9-Mh-rBE" kind="show" id="ZFu-W0-i7v"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y9c-sR-Gfc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1w5-ln-nNS" firstAttribute="leading" secondItem="y9c-sR-Gfc" secondAttribute="leading" id="5i9-8h-4TP"/>
+                            <constraint firstAttribute="trailing" secondItem="1w5-ln-nNS" secondAttribute="trailing" id="NlH-4N-Loc"/>
+                            <constraint firstItem="1w5-ln-nNS" firstAttribute="top" secondItem="y9c-sR-Gfc" secondAttribute="top" id="g4N-Bh-uCH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnNewProj" destination="SEx-0Q-Z78" id="UIf-ub-ZtM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgG-ZJ-CF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,9 +88,31 @@
                                 <color key="pageIndicatorTintColor" systemColor="labelColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8p-ZK-7FP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Project 2" id="mh4-we-4Az">
+                                        <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="AcG-Cq-Ssn">
+                                            <connections>
+                                                <segue destination="fk8-iT-eSg" kind="show" id="D12-KK-EXl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="5CG-ua-R8R">
+                                            <connections>
+                                                <segue destination="Bu9-Mh-rBE" kind="show" id="bjJ-Ck-TXe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j7h-Rr-iGC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c8p-ZK-7FP" firstAttribute="top" secondItem="j7h-Rr-iGC" secondAttribute="top" id="LvT-5V-Tbl"/>
+                            <constraint firstItem="c8p-ZK-7FP" firstAttribute="trailing" secondItem="j7h-Rr-iGC" secondAttribute="trailing" id="V1J-3m-h8t"/>
+                            <constraint firstItem="c8p-ZK-7FP" firstAttribute="leading" secondItem="j7h-Rr-iGC" secondAttribute="leading" id="WjS-tX-Tbm"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esK-xi-U4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -77,17 +133,90 @@
                                 <color key="pageIndicatorTintColor" systemColor="labelColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4Q-5R-V4t">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Project 3" id="RXD-FV-1xO">
+                                        <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="Z2n-7g-ucL">
+                                            <connections>
+                                                <segue destination="fk8-iT-eSg" kind="show" id="QLV-aD-Ccj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="NJO-n9-QZU">
+                                            <connections>
+                                                <segue destination="Bu9-Mh-rBE" kind="show" id="UmO-Cb-5lm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="52p-Bo-dRS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c4Q-5R-V4t" firstAttribute="leading" secondItem="52p-Bo-dRS" secondAttribute="leading" id="JIf-ed-UNu"/>
+                            <constraint firstItem="c4Q-5R-V4t" firstAttribute="top" secondItem="52p-Bo-dRS" secondAttribute="top" id="PHT-jY-2aj"/>
+                            <constraint firstItem="c4Q-5R-V4t" firstAttribute="trailing" secondItem="52p-Bo-dRS" secondAttribute="trailing" id="u0A-Q0-i1Y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCu-Qz-vty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304" y="118"/>
         </scene>
+        <!--Help-->
+        <scene sceneID="j5I-ds-rHl">
+            <objects>
+                <viewController storyboardIdentifier="HelpViewController" title="Help" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fk8-iT-eSg" customClass="HelpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rm7-EY-jZO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TUM-um-H1Z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Qj-zB-E93"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cyI-cI-tev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1252" y="828"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="iZO-K2-XzL">
+            <objects>
+                <tableViewController id="Bu9-Mh-rBE" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dph-47-ILr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Sea-g9-JYA">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sea-g9-JYA" id="pw5-US-SVM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Bu9-Mh-rBE" id="bBz-uv-czu"/>
+                            <outlet property="delegate" destination="Bu9-Mh-rBE" id="GJY-bu-tqD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="p4x-77-5NY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6E2-v0-jCh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="828"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UmO-Cb-5lm"/>
+        <segue reference="QLV-aD-Ccj"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
