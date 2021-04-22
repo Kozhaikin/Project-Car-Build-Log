@@ -11,7 +11,6 @@
 		5ACF4D0A262DB82F00A577E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D09262DB82F00A577E8 /* SceneDelegate.swift */; };
 		5ACF4D0C262DB82F00A577E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D0B262DB82F00A577E8 /* ViewController.swift */; };
 		5ACF4D0F262DB82F00A577E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACF4D0D262DB82F00A577E8 /* Main.storyboard */; };
-		5ACF4D12262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D10262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld */; };
 		5ACF4D14262DB83000A577E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ACF4D13262DB83000A577E8 /* Assets.xcassets */; };
 		5ACF4D17262DB83000A577E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ACF4D15262DB83000A577E8 /* LaunchScreen.storyboard */; };
 		5ACF4D21262DBC1400A577E8 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D20262DBC1400A577E8 /* ProjectViewController.swift */; };
@@ -24,6 +23,7 @@
 		5ACF4D41262DC22A00A577E8 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D40262DC22A00A577E8 /* Project.swift */; };
 		5ACF4D44262DC23000A577E8 /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D43262DC23000A577E8 /* Part.swift */; };
 		5ACF4D4B262F128100A577E8 /* NewProjectWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D4A262F128100A577E8 /* NewProjectWindow.swift */; };
+		5AF8FB682630990900DBF267 /* Project_Car_Build_Log.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF4D10262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -188,6 +188,7 @@
 			files = (
 				5ACF4D3B262DC20D00A577E8 /* Page2ViewController.swift in Sources */,
 				5ACF4D21262DBC1400A577E8 /* ProjectViewController.swift in Sources */,
+				5AF8FB682630990900DBF267 /* Project_Car_Build_Log.xcdatamodeld in Sources */,
 				5ACF4D4B262F128100A577E8 /* NewProjectWindow.swift in Sources */,
 				5ACF4D25262DBC9300A577E8 /* NewProjectViewController.swift in Sources */,
 				5ACF4D3E262DC21B00A577E8 /* Page3ViewController.swift in Sources */,
@@ -195,7 +196,6 @@
 				5ACF4D0C262DB82F00A577E8 /* ViewController.swift in Sources */,
 				5ACF4D2E262DBCCD00A577E8 /* HelpViewController.swift in Sources */,
 				5ACF4D08262DB82F00A577E8 /* AppDelegate.swift in Sources */,
-				5ACF4D12262DB82F00A577E8 /* Project_Car_Build_Log.xcdatamodeld in Sources */,
 				5ACF4D38262DC20400A577E8 /* Page1ViewController.swift in Sources */,
 				5ACF4D0A262DB82F00A577E8 /* SceneDelegate.swift in Sources */,
 				5ACF4D2B262DBCBB00A577E8 /* SettingsViewController.swift in Sources */,
