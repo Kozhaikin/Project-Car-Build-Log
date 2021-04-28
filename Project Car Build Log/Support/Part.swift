@@ -14,7 +14,7 @@ class Part {
     private var cost: Float
     private var date: String // optional; default is 00/00/00
     
-    init(newNum: Int, newName: String, newCost: Float, newDate: String = "00/00/00") {
+    init(newNum: Int, newName: String, newCost: Double, newDate: String = "00/00/00") {
         self.partNum = newNum
         self.partName = newName
         self.cost = newCost

@@ -14,6 +14,8 @@ class Project {
     private var make: String
     private var model: String
     private var projName: String
+    private var partCount: Int = 0
+    private var parts = [Part]()
     
     init(newProjNum: Int, newProjYear: String, newProjMake: String, newProjModel: String) {
         self.projNum = newProjNum
@@ -65,6 +67,15 @@ class Project {
     func updateName() {
         // auto set; called after at least one parameter is changed
         self.projName = self.year + self.make + self.model
+    }
+    
+    func getPartList() -> [Part] {
+        return self.parts
+    }
+    
+    func addPart(newPart: Part) {
+        parts.append(newPart)
+        partCount += 1
     }
     
 }
