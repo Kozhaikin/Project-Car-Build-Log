@@ -15,12 +15,17 @@ class PartView: UIView {
     var lblDate: UILabel
     
     override init(frame: CGRect) {
-        super.init(frame: frame)
         self.lblName = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 150))
+        self.lblCost = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 150))
+        self.lblDate = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 150))
+        super.init(frame: frame)
         setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.lblName = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 150))
+        self.lblCost = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 150))
+        self.lblDate = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 150))
         super.init(coder: aDecoder)
         setupView()
     }
