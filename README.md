@@ -18,6 +18,12 @@ This was developed for use with iOS 14 and up with the Swift programming languag
   <li>Option to have more than three projects simultaneously.</li>
 </ul>
 
+<b>Sample Screenshots</b>
+
+<img src = "https://i.imgur.com/46My3oG.png" alt="Create a new project" width="255" height="487"> <img src = "https://i.imgur.com/jalbikm.png" alt="Create a new project" width="255" height="487"> <img src = "https://i.imgur.com/mleVHV5.png" alt="Create a new project" width="255" height="487">
+
 This app is being continually contributed to.
+
+<a href="https://github.com/Kozhaikin/Classic-PCBL">Click here</a> if you would like to view the original version of this application. I also made this in Swift but it has some design differences as well as a different way of storing data compared to this version.
 
 Note: Not currently available on the app store due to high developer account costs.
