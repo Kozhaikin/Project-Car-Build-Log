@@ -11,7 +11,7 @@ class Part {
     
     private var partNum: Int
     private var partName: String
-    private var cost: Float
+    private var cost: Double
     private var date: String // optional; default is 00/00/00
     
     init(newNum: Int, newName: String, newCost: Double, newDate: String = "00/00/00") {
@@ -30,11 +30,11 @@ class Part {
         // for future implementation of swapping positions of parts
     }
     
-    func getCost() -> Float {
+    func getCost() -> Double {
         return self.cost
     }
     
-    func setCost(newCost: Float) {
+    func setCost(newCost: Double) {
         self.cost = newCost
     }
     
