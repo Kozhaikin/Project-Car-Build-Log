@@ -14,6 +14,7 @@ class Project {
     private var make: String
     private var model: String
     private var projName: String
+    private var parts = [Part]()
     
     init(newProjNum: Int, newProjYear: String, newProjMake: String, newProjModel: String) {
         self.projNum = newProjNum
@@ -22,7 +23,7 @@ class Project {
         self.model = newProjModel
         
         // Concat individual strings for conveince
-        projName = year + make + model
+        projName = year + " " + make + " " + model
     }
     
     // gets and sets
@@ -40,6 +41,7 @@ class Project {
     
     func setYear(newYear: String) {
         self.year = newYear
+        updateName()
     }
     
     func getMake() -> String {
@@ -48,6 +50,7 @@ class Project {
     
     func setMake(newMake: String) {
         self.make = newMake
+        updateName()
     }
     
     func getModel() -> String {
@@ -56,6 +59,7 @@ class Project {
     
     func setModel(newModel: String) {
         self.model = newModel
+        updateName()
     }
     
     func getName() -> String {
@@ -64,7 +68,27 @@ class Project {
     
     func updateName() {
         // auto set; called after at least one parameter is changed
-        self.projName = self.year + self.make + self.model
+        self.projName = self.year + " " + self.make + " " + self.model
+    }
+    
+    func getPartList() -> [Part] {
+        return self.parts
+    }
+    
+    func getPartCount() -> Int {
+        return self.parts.count
+    }
+    
+    func addPart(newPart: Part) {
+        parts.append(newPart)
+    }
+    
+    func removePart(partNum: Int) {
+        parts.remove(at: partNum)
+    }
+    
+    func clearPartsList() {
+        parts.removeAll()
     }
     
 }
